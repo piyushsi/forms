@@ -1,0 +1,108 @@
+.main,.main2{
+	  	text-align:center;
+	  	border: .0625rem solid grey; 
+	  	width: 25%;
+		height:50%;
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	  	margin: auto;
+  	 -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: .2s;
+}
+
+@-webkit-keyframes example {
+  0%   {left:37.5rem; top:0;}
+  100% {left:0rem; top:0rem;}
+}
+  	input {
+  		margin-top: 10%;
+  		width: 20rem;
+  		height: 2rem;
+  	}
+  	.a{
+position: absolute;
+left: 7%;
+bottom: 30%;
+text-decoration: none;
+  	}
+  	  	.b{
+position: absolute;
+left: 7%;
+bottom: 15%;
+text-decoration: none;
+  	}
+  	button {
+ position: absolute;
+right: 7%;
+bottom: 15%;
+  	}
+.main2{
+  display: none;
+   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: .2s;
+}
+
+@-webkit-keyframes example {
+  0%   {left:37.5rem; top:0;}
+  100% {left:0rem; top:0rem;}
+}
+.none {
+  display: none;
+}
+.page{
+  display: none;
+  text-align: center;
+  background-color: green;
+}
+.redalert::placeholder {
+  color: red;
+}
+.logout{
+  color: green;
+  font-size:2rem;
+  display: none;
+  text-align: center;
+}
+.loader {
+  display: none;
+  position: absolute;
+  left: 45%;
+   border: 1rem solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 1rem solid green;
+  width: 7.5rem;
+  height: 7.5rem;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@media all and (max-width: 768px) {
+  html{
+    font-size: 10px;
+ 
+  }
+  .main,.main2{
+    width: 75%
+  }
+  .loader {
+    left:35%
+  }
+
+  }
