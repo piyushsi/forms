@@ -98,7 +98,8 @@ bottom: 15%;
  
   }
   .main,.main2{
-    width: 75%
+    width: 75%;
+    height:70%;
   }
   .loader {
     left:35%
